@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuringCube</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js" integrity="sha512-5T245ZTH0m0RfONiFm2NF0zcYcmAuNzcGyPSQ18j8Bs5Pbfhp5HP1hosrR8XRt5M3kSRqzjNMYpm2+it/AUX/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <button id="rotate-button">
+        <img src="img/rotation.svg" alt="Rotate Cube">
+    </button>
+
+    <div class="text-input">
+        <textarea id="user-input" placeholder="Massage TuringCube"></textarea>
+        <button id="submit-button">submit</button>
+    </div>
+
+    <div id="cube-container">
+        <div id="element1" class="element">
+            <div class="emoji"></div>
+            <div id="Excitement-response"></div>
+        </div>
+        <div id="element2" class="element">
+            <div class="emoji"></div>
+            <div id="Happiness-response"></div>
+        </div>
+        <div id="element3" class="element">
+            <div class="emoji"></div>
+            <div id="Sadness-response"></div>
+        </div>
+        <div id="element4" class="element">
+            <div class="emoji"></div>
+            <div id="Anger-response"></div>
+        </div>
+        <div id="element5" class="element">
+            <div class="emoji"></div>
+            <div id="Anxiety-response"></div>
+        </div>
+        <div id="element6" class="element">
+            <div class="emoji"></div>
+            <div id="Fear-response"></div>
+        </div>
+    </div>
+
+    <div id="matter-container"></div>
+
+
+    <!-- <script src="libs/three.min.js"></script> -->
+    <!-- <script src="libs/CSS3DRenderer.js"></script> -->
+    <!-- <script src="libs/OrbitControls.js"></script> -->
+    <script src="cube.js"></script>
+    <script src="script.js"></script>
+    <script src="emoji.js"></script>
+    <script src="roll.js"></script>
+    <!-- <script src="emoji.js"></script> -->
+
+
+    
+</body>
+</html>

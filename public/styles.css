@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Harlow Solid Italic';
+    src: url('fonts/rouna-bold-webfont.ttf') format('truetype');
+  }
+
+body, html {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: column; /* 子元素纵向排列 */
+}
+
+
+#rotate-button {
+    position: absolute;
+    background-color: rgb(190, 221, 245);
+    border: none; 
+    border-radius: 50%; /* 使按钮成为圆形 */
+    top: 50%;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    z-index: 999;
+    /* 其他必要的样式 */
+}
+
+#rotate-button img {
+    display: block;
+    margin: auto; /* 水平和垂直居中 */
+    width: 100%; /* 根据需要调整大小 */
+    height: auto; /* 保持图像的纵横比 */
+}
+
+#rotate-button:hover {
+    background-color: #ffcb4d; /* 鼠标悬停时的背景颜色，可以根据需要调整 */
+    cursor: pointer; /* 鼠标悬停时变为指针形状 */
+}
+
+
+.text-input {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 20px;
+    width: 30%;
+    z-index: 2;
+    top: 40%; /* 保持顶部距离 */
+    right: 5%; /* 设置右边距为 5% */
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+}
+
+
+
+.text-input textarea {
+    border: none; /* 移除边框显示 */
+    background-color: transparent; /* 设置背景透明 */
+    width: 100%; /* 文本框宽度为容器的 80% */
+    padding: 10px; /* 文本框内边距 */
+    resize: none; /* 允许垂直调整大小 */
+    font-size: 1.5em; /* 文本大小 */
+    outline: none; /* 在获取焦点时移除轮廓 */
+    max-height: 100px; /* 设置最大高度为8行文本的高度 */
+    min-height: 65px; /* 设置最小高度为22px */
+    overflow-y: 800; /* 内容超过最大高度时显示滚动条 */
+    font-family: 'Harlow Solid Italic';
+}
+
+.text-input button {
+    background-color: rgb(190, 221, 245); 
+    border-radius: 10px; /* 设置圆角 */
+    color: rgb(255, 255, 255); /* 设置文字颜色 */
+    border: none; /* 移除边框 */
+    /* 删除 background-image 和相关样式 */
+    font-size: 2em; /* 设置合适的字体大小 */
+    display: flex; /* 使用 flex 布局 */
+    align-items: center; /* 垂直居中文本 */
+    justify-content: center; /* 水平居中文本 */
+    font-family: 'Harlow Solid Italic';
+}
+
+.text-input button {
+    width: 100%; /* 假设按钮宽度与容器相同 */
+    height: 40px; /* 设置一个合适的高度 */
+}
+
+.text-input button:hover {
+    background-color: #fdcf5b; /* 鼠标悬浮时的背景颜色 */
+    color: rgb(233, 83, 29); /* 设置文字颜色为黑色，如果需要的话 */
+}
+
+
+/* 立方体容器样式 */
+#cube-container {
+    width: 80%; /* 占据 65% 的宽度 */
+    display: flex; /* 使用 flex 布局 */
+    justify-content: flex-end; /* 水平居中内容 */
+    align-items: center; /* 垂直居中内容 */
+    position: relative; /* 相对定位 */
+    background-color: rgba(181, 59, 25, 0); /* 背景颜色半透明 */
+    z-index: 1;
+    /* transform: translateX(10px); */
+}
+
+.emotions {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.emotion {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+
+#matter-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* 确保背景在内容下方 */
+}
+
